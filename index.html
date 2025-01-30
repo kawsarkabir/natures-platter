@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natures Platter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.5/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- google font link here -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/tailwindcss">
+        @theme {
+         --font-primary: "Sora", serif;
+         --bg-theme-accent:#179800;
+         --text-theme-accent:#179800;
+        }
+        .bg-primary-theme{
+            background-color: var(--bg-theme-accent);
+        }
+        .text-primary-theme{
+            color: var(--text-theme-accent);
+        }
+        .border-primary-theme{
+            border-color: var(--bg-theme-accent);
+        }
+        
+      </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="bg-linear-to-r from-[#FFFFFF] to-[#EFEBE3]">
+        <div class="navbar container mx-auto font-primary">
+            <div class="navbar-start flex-row-reverse   justify-between w-full">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-40 lg:ml-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <img src="./assets/logo-header.png" alt="" class="w-20">
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-3 hidden lg:flex md:flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="btn text-primary-theme bg-transparent text-sm font-normal border-primary-theme">Login</a>
+                <a class="btn text-white bg-primary-theme text-sm font-normal">Register</a>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+
+
+</body>
+
+</html>
