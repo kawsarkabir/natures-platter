@@ -33,41 +33,58 @@
 <body>
     <!-- header section start -->
     <header class="bg-linear-to-r from-[#FFFFFF] to-[#EFEBE3]">
-        <div class="navbar container mx-auto font-primary">
-            <div class="navbar-start flex-row-reverse   justify-between w-full">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-40 lg:ml-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <section class="container mx-auto px-4">
+            <nav class="navbar pt-5 font-primary">
+                <div class="navbar-start flex-row-reverse justify-between  w-full lg:w-1/2 md:w-1/2">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-40 lg:ml-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <a class="btn btn-ghost text-xl">
+                        <img src="./assets/logo-header.png" alt="" class="w-20">
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Product</a></li>
                         <li><a>Service</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">
-                    <img src="./assets/logo-header.png" alt="" class="w-20">
-                </a>
+                <div class="navbar-end space-x-3 hidden lg:flex md:flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn text-primary-theme bg-transparent text-sm font-normal border-primary-theme">Login</a>
+                    <a class="btn text-white bg-primary-theme text-sm font-normal">Register</a>
+                </div>
+            </nav>
+            <!-- hero section start -->
+            <div class="flex-row items-center justify-items-center gap-4">
+                <div class="space-y-6 mt-20 lg:w-1/2 mx-auto text-center">
+                    <h1 class="lg:text-5xl text-3xl font-semibold">Freshness <span class="text-primary-theme">You
+                            Can</span> <br> <span class="text-primary-theme">Count</span> On, Prices You’ll Love!
+                    </h1>
+                    <p> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve
+                        got
+                        you covered every day!</p>
+                </div>
+                <div class="pt-5">
+                    <img src="./assets/hero-vegetables.png" alt="" class="w-[600px]">
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
-                    <li><a>Service</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end space-x-3 hidden lg:flex md:flex">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <a class="btn text-primary-theme bg-transparent text-sm font-normal border-primary-theme">Login</a>
-                <a class="btn text-white bg-primary-theme text-sm font-normal">Register</a>
-            </div>
-        </div>
+            <!-- hero section end -->
+        </section>
     </header>
     <!-- header section end -->
 
