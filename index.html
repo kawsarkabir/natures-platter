@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <style type="text/tailwindcss">
         @theme {
          --font-primary: "Sora", serif;
          --bg-theme-accent:#179800;
          --text-theme-accent:#179800;
+         --bg-secondary-accent:#EFEBE3;
+
         }
         .bg-primary-theme{
             background-color: var(--bg-theme-accent);
@@ -26,15 +29,21 @@
         .border-primary-theme{
             border-color: var(--bg-theme-accent);
         }
+        .font-primary{
+            font-family: var(--font-primary);
+        }
+        .bg-secondary-accent{
+            background-color: var(--bg-secondary-accent);
+        }
         
       </style>
 </head>
 
-<body>
+<body class="font-primary">
     <!-- header section start -->
     <header class="bg-linear-to-r from-[#FFFFFF] to-[#EFEBE3]">
         <section class="container mx-auto px-4">
-            <nav class="navbar pt-5 font-primary">
+            <nav class="navbar pt-5">
                 <div class="navbar-start flex-row-reverse justify-between  w-full lg:w-1/2 md:w-1/2">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ml-40 lg:ml-0">
@@ -88,7 +97,34 @@
     </header>
     <!-- header section end -->
     <main>
-        <section></section>
+        <!-- Services section start -->
+        <section class="py-16 container mx-auto px-4">
+            <h1 class="py-10 font-semibold text-3xl text-primary-theme">Services</h1>
+            <div class="flex justify-between gap-6 flex-col lg:flex-row md:flex-row">
+                <div class="bg-secondary-accent text-center space-y-3 p-8 rounded-xl">
+                    <div class="bg-white box-shadow p-4 rounded-full w-20 h-20 mx-auto">
+                        <img src="./assets/service.png" alt="">
+                    </div>
+                    <h3>24/7 Services </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-secondary-accent text-center space-y-3 p-8 rounded-xl">
+                    <div class="bg-white box-shadow p-4 rounded-full w-20 h-20 mx-auto">
+                        <img src="./assets/delivery.png" alt="">
+                    </div>
+                    <h3>24/7 Services </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-secondary-accent text-center space-y-3 p-8 rounded-xl">
+                    <div class="bg-white box-shadow p-4 rounded-full w-20 h-20 mx-auto">
+                        <img src="./assets/healthy.png" alt="">
+                    </div>
+                    <h3>24/7 Services </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+        </section>
+        <!-- services section end -->
     </main>
 
 
